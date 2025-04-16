@@ -11,5 +11,15 @@ void main() {
       final list = [1, 2, 3];
       expect(list, hasLength(3));
     });
+
+    test('containsAllの使用例', () {
+      final list = [1, 2, 3, 4];
+      expect(list, containsAll([2, 4]));
+    });
+
+    test('isEmptyとisNotEmptyの使用例', () {
+      expect([], isEmpty);
+      expect([1, 2], isNotEmpty);
+    });
   });
 }

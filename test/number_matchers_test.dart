@@ -11,5 +11,10 @@ void main() {
       expect(5, greaterThanOrEqualTo(5));
       expect(3, lessThanOrEqualTo(3));
     });
+
+    test('数値の範囲チェック', () {
+      // 1 <= value < 5 の範囲
+      expect(3, inClosedOpenRange(1, 5));
+    });
   });
 }

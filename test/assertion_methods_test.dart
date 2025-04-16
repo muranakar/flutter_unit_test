@@ -10,5 +10,13 @@ void main() {
       expect(3 > 2, isTrue);
       expect(2 > 3, isFalse);
     });
+
+    test('isNullとisNotNullの使用例', () {
+      var value;
+      expect(value, isNull);
+
+      value = 'not null';
+      expect(value, isNotNull);
+    });
   });
 }
